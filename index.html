@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnyCompu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos CSS personalizados -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">American TecnyCompu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#equipo">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contáctenos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagen1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="imagen2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="imagen3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  <!-- Servicios -->
+<section id="servicios">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <div class="row">
+            <!-- Servicio 1: Mantenimiento de computadoras y portátiles -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagen_mantenimiento.jpg" class="card-img-top" alt="Mantenimiento de computadoras y portátiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento de computadoras y portátiles</h5>
+                        <p class="card-text">Realizamos mantenimiento preventivo y correctivo para asegurar el óptimo funcionamiento de tus equipos.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 2: Soporte técnico -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagen_soporte.jpg" class="card-img-top" alt="Soporte técnico">
+                    <div class="card-body">
+                        <h5 class="card-title">Soporte técnico</h5>
+                        <p class="card-text">Ofrecemos asistencia técnica especializada para resolver cualquier problema que puedas tener con tus equipos.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup2">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 3: Reparación y rescate de información -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagen_reparacion.jpg" class="card-img-top" alt="Reparación y rescate de información">
+                    <div class="card-body">
+                        <h5 class="card-title">Reparación y rescate de información</h5>
+                        <p class="card-text">Recuperamos datos perdidos debido a fallos en el sistema o problemas de hardware, y ofrecemos soluciones de reparación.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup3">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popups de servicios -->
+<!-- Popup 1: Mantenimiento de computadoras y portátiles -->
+<div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popup1Label">Mantenimiento de computadoras y portátiles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada del servicio de mantenimiento de computadoras y portátiles.</p>
+                <img src="imagen_mantenimiento.jpg" class="img-fluid" alt="Mantenimiento de computadoras y portátiles">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 2: Soporte técnico -->
+<div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popup2Label">Soporte técnico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada del servicio de soporte técnico.</p>
+                <img src="imagen_soporte.jpg" class="img-fluid" alt="Soporte técnico">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 3: Reparación y rescate de información -->
+<div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popup3Label">Reparación y rescate de información</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada del servicio de reparación y rescate de información.</p>
+                <img src="imagen_reparacion.jpg" class="img-fluid" alt="Reparación y rescate de información">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Sección de Portafolio -->
+  <section id="portafolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Portafolio</h2>
+      <!-- Aquí puedes incluir ejemplos de proyectos realizados -->
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Sobre Nosotros</h2>
+      <p>Información sobre la empresa, su historia, misión y visión.</p>
+    </div>
+  </section>
+
+  <!-- Sección Equipo -->
+  <section id="equipo" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Equipo</h2>
+      <!-- Breve descripción de los miembros del equipo -->
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contáctenos</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="#" method="POST">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Correo Electrónico" name="correo">
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="Teléfono" name="telefono">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="Mensaje" rows="5" name="mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+          <!-- Mapa de ubicación -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7306875083946!2d-75.5928150852189!3d6.253900395468242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4418be3588de27%3A0x91bdef0df2a2a7ed!2sAmerican%20TecnyCompu!5e0!3m2!1ses!2sco!4v1644642291346!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Login -->
+  <section id="login" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Login</h2>
+      <!-- Espacio para el formulario de login -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>Todos los derechos reservados &copy; 2024 TecnyCompu</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
