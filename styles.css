@@ -16,6 +16,10 @@ body {
     color: #333; /* Cambiar color según tu preferencia */
 }
 
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+    height: 50px; /* Ajusta la altura del logo según sea necesario */
+}
 /* Slider */
 #carouselExampleIndicators {
     width: 100%;
