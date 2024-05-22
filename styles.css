@@ -1,6 +1,9 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar-brand {
@@ -40,16 +43,37 @@ body {
     padding: 50px 0;
 }
 
+#servicios .card-img-top {
+    height: 200px; /* Fija la altura de las imágenes para mantener el tamaño uniforme */
+    object-fit: cover; /* Ajusta las imágenes para que se cubran completamente */
+}
+
+#servicios .modal-body img {
+    max-width: 100%; /* Asegura que las imágenes en el modal sean responsivas */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+
 /* Portafolio */
 #portafolio {
     padding: 50px 0;
 }
 
+.card {
+    height: 100%; /* Hacer que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
 .card-img-container {
+    height: 200px; /* Altura fija para las imágenes */
     overflow: hidden;
 }
 
 .card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor */
     transition: transform 0.3s ease;
 }
 
@@ -57,13 +81,40 @@ body {
     transform: scale(1.1);
 }
 
+.card-body {
+    flex: 1; /* Hacer que el contenido del cuerpo de la tarjeta ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex: 1; /* Permitir que el texto ocupe el espacio disponible */
+}
+
 /* Contáctenos */
 #contacto {
     padding: 50px 0;
+}
+
+#contacto form .form-group {
+    margin-bottom: 15px;
+}
+
+#contacto .map-container {
+    height: 300px; /* Altura fija para el mapa */
+    margin-top: 20px;
 }
 
 /* Footer */
 footer {
     background-color: #333; /* Cambiar color según tu preferencia */
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
