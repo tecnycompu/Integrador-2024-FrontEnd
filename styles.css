@@ -20,6 +20,7 @@ body {
 .navbar-brand img {
     height: 50px; /* Ajusta la altura del logo según sea necesario */
 }
+
 /* Slider */
 #carouselExampleIndicators {
     width: 100%;
@@ -52,7 +53,6 @@ body {
     max-width: 100%; /* Asegura que las imágenes en el modal sean responsivas */
     height: auto; /* Mantiene la proporción de las imágenes */
 }
-
 
 /* Portafolio */
 #portafolio {
@@ -95,6 +95,42 @@ body {
 
 .card-text {
     flex: 1; /* Permitir que el texto ocupe el espacio disponible */
+}
+
+/* Nosotros */
+#nosotros img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#nosotros .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem; /* Ajusta el espacio entre las filas */
+}
+
+#nosotros .text-md-start {
+    text-align: left;
+}
+
+#nosotros .text-md-end {
+    text-align: right;
+}
+
+#nosotros .img-container {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros .spacer {
+    flex: 1;
 }
 
 /* Contáctenos */
