@@ -146,6 +146,13 @@ body {
     flex: 1;
 }
 
+/* marcas */
+
+#carouselMarcas .carousel-item img {
+    max-height: 150px; /* Adjust height as needed */
+    object-fit: contain; /* Ensures logos maintain aspect ratio */
+  }
+
 /* Contáctenos */
 #contacto {
     padding: 50px 0;
