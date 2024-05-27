@@ -1,400 +1,730 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TecnyCompu</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Estilos CSS personalizados -->
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Américan TecnyCompu</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lightbox CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Estilos CSS personalizados -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="/img/logo.png" alt="Logo" height="140">
+          <img src="/img/logo.png" alt="Logo" height="140" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portafolio">Portafolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#equipo">Equipo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contáctenos</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portafolio">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contáctenos</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- Slider -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        
-     
-    </div>
-    <div class="carousel-inner">
+    <!-- Slider -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/imagen1.jpg" class="d-block w-100" alt="Slider Image 1">
+          <img
+            src="img/imagen1.jpg"
+            class="d-block w-100"
+            alt="Slider Image 1"
+          />
         </div>
         <div class="carousel-item">
-            <img src="img/imagen2.jpg" class="d-block w-100" alt="Slider Image 2">
+          <img
+            src="img/imagen2.jpg"
+            class="d-block w-100"
+            alt="Slider Image 2"
+          />
         </div>
         <div class="carousel-item">
-            <img src="img/imagen3.jpg" class="d-block w-100" alt="Slider Image 3">
+          <img
+            src="img/imagen3.jpg"
+            class="d-block w-100"
+            alt="Slider Image 3"
+          />
         </div>
-        
-    </div>   
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
-</div>
+      </button>
+    </div>
 
-  <!-- Servicios -->
-<section id="servicios">
-    <div class="container">
+    <!-- Servicios -->
+    <section id="servicios">
+      <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">
-            <!-- Servicio 1: Mantenimiento de computadoras y portátiles -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/imagen_mantenimiento.jpg" class="card-img-top" alt="Mantenimiento de computadoras y portátiles">
-                    <div class="card-body">
-                        <h5 class="card-title">Mantenimiento de computadoras y portátiles</h5>
-                        <p class="card-text">Realizamos mantenimiento preventivo y correctivo para asegurar el óptimo funcionamiento de tus equipos.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup1">Ver más</button>
-                    </div>
-                </div>
+          <!-- Servicio 1: Mantenimiento de computadoras y portátiles -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="img/imagen_mantenimiento.jpg"
+                class="card-img-top"
+                alt="Mantenimiento de computadoras y portátiles"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mantenimiento de computadoras y portátiles
+                </h5>
+                <p class="card-text">
+                  Realizamos mantenimiento preventivo y correctivo para asegurar
+                  el óptimo funcionamiento de tus equipos.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#popup1"
+                >
+                  Ver más
+                </button>
+              </div>
             </div>
+          </div>
 
-            <!-- Servicio 2: Soporte técnico -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/imagen_soporte.jpg" class="card-img-top" alt="Soporte técnico">
-                    <div class="card-body">
-                        <h5 class="card-title">Soporte técnico</h5>
-                        <p class="card-text">Ofrecemos asistencia técnica especializada para resolver cualquier problema que puedas tener con tus equipos.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup2">Ver más</button>
-                    </div>
-                </div>
+          <!-- Servicio 2: Soporte técnico -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="img/imagen_soporte.jpg"
+                class="card-img-top"
+                alt="Soporte técnico"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Soporte técnico</h5>
+                <p class="card-text">
+                  Ofrecemos asistencia técnica especializada para resolver
+                  cualquier problema que puedas tener con tus equipos.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#popup2"
+                >
+                  Ver más
+                </button>
+              </div>
             </div>
+          </div>
 
-            <!-- Servicio 3: Reparación y rescate de información -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/imagen_reparacion.jpg" class="card-img-top" alt="Reparación y rescate de información">
-                    <div class="card-body">
-                        <h5 class="card-title">Reparación y rescate de información</h5>
-                        <p class="card-text">Recuperamos datos perdidos debido a fallos en el sistema o problemas de hardware, y ofrecemos soluciones de reparación.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup3">Ver más</button>
-                    </div>
-                </div>
+          <!-- Servicio 3: Reparación y rescate de información -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="img/imagen_reparacion.jpg"
+                class="card-img-top"
+                alt="Reparación y rescate de información"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Reparación y rescate de información</h5>
+                <p class="card-text">
+                  Recuperamos datos perdidos debido a fallos en el sistema o
+                  problemas de hardware, y ofrecemos soluciones de reparación.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#popup3"
+                >
+                  Ver más
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Popups de servicios -->
-<!-- Popup 1: Mantenimiento de computadoras y portátiles -->
-<div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <!-- Popups de servicios -->
+    <!-- Popup 1: Mantenimiento de computadoras y portátiles -->
+    <div
+      class="modal fade"
+      id="popup1"
+      tabindex="-1"
+      aria-labelledby="popup1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="popup1Label">Mantenimiento de computadoras y portátiles</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Descripción detallada del servicio de mantenimiento de computadoras y portátiles.</p>
-                <img src="img/imagen_mantenimiento.jpg" class="img-fluid" alt="Mantenimiento de computadoras y portátiles">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Popup 2: Soporte técnico -->
-<div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="popup2Label">Soporte técnico</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Descripción detallada del servicio de soporte técnico.</p>
-                <img src="img/imagen_soporte.jpg" class="img-fluid" alt="Soporte técnico">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Popup 3: Reparación y rescate de información -->
-<div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup3Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="popup3Label">Reparación y rescate de información</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Descripción detallada del servicio de reparación y rescate de información.</p>
-                <img src="img/imagen_reparacion.jpg" class="img-fluid" alt="Reparación y rescate de información">
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
- <!-- Portafolio -->
-<section id="portafolio">
-    <div class="container">
-        <h2 class="text-center mb-5">Portafolio</h2>
-        <div class="row">
-            <!-- Tarjeta 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio1.jpg" class="card-img-top" alt="Proyecto 1">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 1</h5>
-                        <p class="card-text">Descripción del proyecto 1. <a href="http://example.com/proyecto1" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio2.jpg" class="card-img-top" alt="Proyecto 2">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 2</h5>
-                        <p class="card-text">Descripción del proyecto 2. <a href="http://example.com/proyecto2" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio3.jpg" class="card-img-top" alt="Proyecto 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 3</h5>
-                        <p class="card-text">Descripción del proyecto 3. <a href="http://example.com/proyecto3" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 4 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio4.jpg" class="card-img-top" alt="Proyecto 4">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 4</h5>
-                        <p class="card-text">Descripción del proyecto 4. <a href="http://example.com/proyecto4" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 5 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio5.jpg" class="card-img-top" alt="Proyecto 5">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 5</h5>
-                        <p class="card-text">Descripción del proyecto 5. <a href="http://example.com/proyecto5" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 6 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/portafolio6.jpg" class="card-img-top" alt="Proyecto 6">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto 6</h5>
-                        <p class="card-text">Descripción del proyecto 6. <a href="http://example.com/proyecto6" target="_blank">Visitar sitio</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Sobre Nosotros -->
-<section id="nosotros" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Sobre Nosotros</h2>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 d-flex justify-content-center order-md-2 fade-in">
-                <img src="img/person1.jpg" class="rounded-circle mb-3" alt="Nosotros">
-            </div>
-            <div class="col-md-6 text-md-end order-md-1 fade-in">
-                <p>Somos líderes en el campo del soporte técnico de tecnología de la información (TI). Brindamos soluciones confiables y eficientes para garantizar el funcionamiento óptimo de sistemas informáticos y servicios que impulsen el éxito y la productividad.</p>
-            </div>
-        </div>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 d-flex justify-content-center order-md-1 fade-in">
-                <img src="img/person2.jpg" class="rounded-circle mb-3" alt="Nuestra Misión">
-            </div>
-            <div class="col-md-6 text-md-start order-md-2 fade-in">
-                <p>Nuestra Misión: Proporcionar soluciones de soporte técnico de alta calidad, confiables y personalizadas. Nos comprometemos a ayudar a nuestros clientes a maximizar el valor de sus inversiones en TI, ofreciendo servicios eficientes, innovadores y adaptados a su necesidad.</p>
-            </div>
-        </div>
-        <div class="row align-items-center fade-in">
-            <div class="col-md-6 d-flex justify-content-center order-md-2">
-                <img src="img/person3.jpg" class="rounded-circle mb-3" alt="Nuestra Visión">
-            </div>
-            <div class="col-md-6 text-md-end order-md-1">
-                <p>Nuestra Visión: Ser reconocidos como el proveedor líder de soluciones, destacando por nuestra excelencia, innovación y compromiso con la satisfacción del cliente. Buscamos ser la opción preferida de empresas y organizaciones en la optimización y gestión de sus sistemas.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-  <!-- Sección Equipo 
-  <section id="equipo" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Equipo</h2>
-      
-    </div>
-  </section> -->
-
-
-  <section id="nuestras-marcas" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Nuestras Marcas</h2>
-  
-      <div id="carouselMarcas" class="carousel slide" data-bs-ride="carousel" data-bs-rtl="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/hp.png" class="d-block w-100" alt="Marca 1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup1Label">
+              Mantenimiento de computadoras y portátiles
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="carousel-item">
-            <img src="img/acer.png" class="d-block w-100" alt="Marca 2">
-          </div>
-          <div class="carousel-item">
-            <img src="img/asus.png" class="d-block w-100" alt="Marca 3">
-          </div>
-          <div class="carousel-item">
-            <img src="img/apple.png" class="d-block w-100" alt="Marca 4">
-          </div>
-          <div class="carousel-item">
-            <img src="img/dell.png" class="d-block w-100" alt="Marca 5">
-          </div>
-          <div class="carousel-item">
-            <img src="img/xiaomi.png" class="d-block w-100" alt="Marca 6">
-          </div>
-          <div class="carousel-item">
-            <img src="img/samsung.png" class="d-block w-100" alt="Marca 7">
-          </div>
-          <div class="carousel-item">
-            <img src="img/lenovo.png" class="d-block w-100" alt="Marca 8">
+          <div class="modal-body">
+            <p>
+              Descripción detallada del servicio de mantenimiento de
+              computadoras y portátiles.
+            </p>
+            <img
+              src="img/imagen_mantenimiento.jpg"
+              class="img-fluid"
+              alt="Mantenimiento de computadoras y portátiles"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarcas" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMarcas" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
-  </section>
 
-<!-- Contáctenos -->
-<section id="contacto">
-    <div class="container">
+    <!-- Popup 2: Soporte técnico -->
+    <div
+      class="modal fade"
+      id="popup2"
+      tabindex="-1"
+      aria-labelledby="popup2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Soporte técnico</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Descripción detallada del servicio de soporte técnico.</p>
+            <img
+              src="img/imagen_soporte.jpg"
+              class="img-fluid"
+              alt="Soporte técnico"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Reparación y rescate de información -->
+    <div
+      class="modal fade"
+      id="popup3"
+      tabindex="-1"
+      aria-labelledby="popup3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup3Label">
+              Reparación y rescate de información
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Descripción detallada del servicio de reparación y rescate de
+              información.
+            </p>
+            <img
+              src="img/imagen_reparacion.jpg"
+              class="img-fluid"
+              alt="Reparación y rescate de información"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portafolio -->
+    <section id="portafolio">
+      <div class="container">
+        <h2 class="text-center mb-5">Portafolio</h2>
+        <div class="row">
+          <!-- Tarjeta 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio1.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">
+                  Descripción del proyecto 1.
+                  <a href="http://example.com/proyecto1" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio2.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">
+                  Descripción del proyecto 2.
+                  <a href="http://example.com/proyecto2" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio3.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">
+                  Descripción del proyecto 3.
+                  <a href="http://example.com/proyecto3" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 4 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio4.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 4"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 4</h5>
+                <p class="card-text">
+                  Descripción del proyecto 4.
+                  <a href="http://example.com/proyecto4" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 5 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio5.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 5"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 5</h5>
+                <p class="card-text">
+                  Descripción del proyecto 5.
+                  <a href="http://example.com/proyecto5" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 6 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="img/portafolio6.jpg"
+                  class="card-img-top"
+                  alt="Proyecto 6"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 6</h5>
+                <p class="card-text">
+                  Descripción del proyecto 6.
+                  <a href="http://example.com/proyecto6" target="_blank"
+                    >Visitar sitio</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-5">Sobre Nosotros</h2>
+        <div class="row align-items-center mb-5">
+          <div
+            class="col-md-6 d-flex justify-content-center order-md-2 fade-in"
+          >
+            <img
+              src="img/person1.jpg"
+              class="rounded-circle mb-3"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="col-md-6 text-md-end order-md-1 fade-in">
+            <p>
+              Somos líderes en el campo del soporte técnico de tecnología de la
+              información (TI). Brindamos soluciones confiables y eficientes
+              para garantizar el funcionamiento óptimo de sistemas informáticos
+              y servicios que impulsen el éxito y la productividad.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div
+            class="col-md-6 d-flex justify-content-center order-md-1 fade-in"
+          >
+            <img
+              src="img/person2.jpg"
+              class="rounded-circle mb-3"
+              alt="Nuestra Misión"
+            />
+          </div>
+          <div class="col-md-6 text-md-start order-md-2 fade-in">
+            <p>
+              Nuestra Misión: Proporcionar soluciones de soporte técnico de alta
+              calidad, confiables y personalizadas. Nos comprometemos a ayudar a
+              nuestros clientes a maximizar el valor de sus inversiones en TI,
+              ofreciendo servicios eficientes, innovadores y adaptados a su
+              necesidad.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center fade-in">
+          <div class="col-md-6 d-flex justify-content-center order-md-2">
+            <img
+              src="img/person3.jpg"
+              class="rounded-circle mb-3"
+              alt="Nuestra Visión"
+            />
+          </div>
+          <div class="col-md-6 text-md-end order-md-1">
+            <p>
+              Nuestra Visión: Ser reconocidos como el proveedor líder de
+              soluciones, destacando por nuestra excelencia, innovación y
+              compromiso con la satisfacción del cliente. Buscamos ser la opción
+              preferida de empresas y organizaciones en la optimización y
+              gestión de sus sistemas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-5">Galería</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G01.png" data-lightbox="galeria" data-title="Imagen 1">
+              <img
+                src="img/G01_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 1"
+              />
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G02.png" data-lightbox="galeria" data-title="Imagen 2">
+              <img
+                src="img/G02_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 2"
+              />
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G03.png" data-lightbox="galeria" data-title="Imagen 3">
+              <img
+                src="img/G03_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 3"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G04.png" data-lightbox="galeria" data-title="Imagen 3">
+              <img
+                src="img/G04_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 3"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G05.png" data-lightbox="galeria" data-title="Imagen 3">
+              <img
+                src="img/G05_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 3"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="img/G06.png" data-lightbox="galeria" data-title="Imagen 3">
+              <img
+                src="img/G06_thumb.png"
+                class="img-fluid rounded"
+                alt="Galería 3"
+              />
+            </a>
+          </div>
+
+          <!-- Añade más imágenes según sea necesario -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección marcas -->
+    <section id="nuestras-marcas" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestras Marcas</h2>
+
+        <div
+          id="carouselMarcas"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-rtl="true"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/hp.png" class="d-block w-100" alt="Marca 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/acer.png" class="d-block w-100" alt="Marca 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/asus.png" class="d-block w-100" alt="Marca 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/apple.png" class="d-block w-100" alt="Marca 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/dell.png" class="d-block w-100" alt="Marca 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/xiaomi.png" class="d-block w-100" alt="Marca 6" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/samsung.png" class="d-block w-100" alt="Marca 7" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/lenovo.png" class="d-block w-100" alt="Marca 8" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselMarcas"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselMarcas"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contáctenos -->
+    <section id="contacto">
+      <div class="container">
         <h2 class="text-center mb-5">Contáctenos</h2>
         <div class="row">
-            <div class="col-lg-6">
-                <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo</label>
-                        <input type="email" class="form-control" id="correo" placeholder="Tu correo">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="Tu teléfono">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  placeholder="Tu correo"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="Tu teléfono"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  rows="5"
+                  placeholder="Tu mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-container">
+              <!-- Nuevo mapa de Google -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.015841004287!2d-74.07581130000002!3d4.608340100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f999f123ba0e1%3A0x63b2b199b3ed6762!2sAm%C3%A9rican%20TecnyCompu%20Local%20236!5e0!3m2!1sen!2sus!4v1628359045932!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
-            <div class="col-lg-6">
-                <div class="map-container">
-                    <!-- Nuevo mapa de Google -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.015841004287!2d-74.07581130000002!3d4.608340100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f999f123ba0e1%3A0x63b2b199b3ed6762!2sAm%C3%A9rican%20TecnyCompu%20Local%20236!5e0!3m2!1sen!2sus!4v1628359045932!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>Todos los derechos reservados &copy; 2024 TecnyCompu</p>
+      </div>
+    </footer>
 
-
-  <!-- Sección de Login -->
-  <section id="login" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Login</h2>
-      <!-- Espacio para el formulario de login -->
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p>Todos los derechos reservados &copy; 2024 TecnyCompu</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-</body>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

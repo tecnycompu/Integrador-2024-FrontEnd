@@ -18,7 +18,13 @@ body {
 
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand img {
-    height: 50px; /* Ajusta la altura del logo según sea necesario */
+    height: 60px; /* Ajusta la altura del logo según sea necesario */
+}
+
+
+/* Ajustar margen superior para el contenido */
+body {
+    padding-top: 50px; /* Ajusta el valor según la altura de tu navbar */
 }
 
 /* Slider */
@@ -98,6 +104,10 @@ body {
 }
 
 /* Nosotros */
+#nosotros{
+    background-color: #f1f2f7; /* Color de fondo diferente */
+
+}
 #nosotros img {
     width: 150px;
     height: 150px;
@@ -147,11 +157,51 @@ body {
 }
 
 /* marcas */
-
 #carouselMarcas .carousel-item img {
     max-height: 150px; /* Adjust height as needed */
     object-fit: contain; /* Ensures logos maintain aspect ratio */
-  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a background color to make the icons more visible */
+    border-radius: 50%; /* Makes the background circular */
+    width: 50px; /* Sets the width of the background */
+    height: 50px; /* Sets the height of the background */
+    background-size: 50%, 50%; /* Ensures the icon fits well within the background */
+}
+
+/* Additional styling for the control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjusts the clickable area for the controls */
+}
+
+/* Estilos para la galería */
+#galeria {
+    padding: 50px 0;
+    background-color: #fff3f3; /* Color de fondo diferente */
+}
+
+#galeria .img-fluid {
+    border: 2px solid #fffdfd; /* Borde suave alrededor de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .img-fluid:hover {
+    transform: scale(1.05); /* Zoom suave al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande al pasar el ratón */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
 
 /* Contáctenos */
 #contacto {
