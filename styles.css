@@ -246,3 +246,56 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+footer .social-icon {
+    margin: 0 15px; /* Aumentar espacio entre íconos */
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #555;
+    width: 50px; /* Aumentar el tamaño del círculo */
+    height: 50px; /* Aumentar el tamaño del círculo */
+    line-height: 50px; /* Centrar ícono verticalmente */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño en hover */
+}
+
+footer .social-icon i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Colores específicos para cada red social */
+footer .social-icon.facebook {
+    background-color: #3b5998;
+}
+
+footer .social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+footer .social-icon.youtube {
+    background-color: #ff0000;
+}
+
+footer .social-icon.facebook:hover {
+    background-color: #2d4373;
+}
+
+footer .social-icon.linkedin:hover {
+    background-color: #005582;
+}
+
+footer .social-icon.youtube:hover {
+    background-color: #cc0000;
+}
+
+/* Añadir margen entre los íconos sociales y el párrafo final */
+footer .social-icons-container {
+    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}
