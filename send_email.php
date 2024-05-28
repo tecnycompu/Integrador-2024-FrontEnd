@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar los datos
     if (!empty($name) && !empty($email) && !empty($message)) {
         // Dirección de correo de destino
-        $to = "tecnycompu@gmail.com"; // Cambia esto por tu dirección de correo electrónico
+        $to = "info@tecnycompu.net"; // Cambia esto por tu dirección de correo electrónico
 
         // Asunto del correo
         $subject = "Nuevo mensaje de contacto de $name";

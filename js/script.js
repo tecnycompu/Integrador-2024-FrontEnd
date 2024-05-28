@@ -93,4 +93,43 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.scrollTop = 0; // Para Safari
         document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
     });
+
+    // Manejar el envío del formulario de contacto
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            if (data.includes('Correo enviado exitosamente')) {
+                Swal.fire({
+                    title: 'Éxito',
+                    text: data,
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                });
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    text: data,
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar'
+                });
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                title: 'Error',
+                text: 'Hubo un problema al enviar el correo. Inténtalo de nuevo más tarde.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    });
 });
