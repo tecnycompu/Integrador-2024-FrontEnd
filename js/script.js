@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Configuración de Lightbox
     lightbox.option({
         'resizeDuration': 200,
@@ -9,13 +9,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Efecto de scroll suave para enlaces internos
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
+
+            if (targetId === '') {
+                // Si el targetId está vacío, desplazarse hacia arriba
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else if (targetElement) {
+                // Calcular la posición del elemento teniendo en cuenta el navbar fijo
+                const yOffset = -50; // Ajusta este valor según la altura de tu navbar
+                const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                    top: yPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
@@ -61,4 +75,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Escuchar el evento de desplazamiento y de carga de la página
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('load', handleScroll);
+
+    // Botón Arriba
+    var scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    // Mostrar el botón cuando el usuario se desplaza hacia abajo 20px desde la parte superior
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = 'block';
+        } else {
+            scrollTopBtn.style.display = 'none';
+        }
+    };
+
+    // Desplazarse hacia arriba cuando el usuario hace clic en el botón
+    scrollTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    });
 });

@@ -206,6 +206,7 @@ body {
 /* Contáctenos */
 #contacto {
     padding: 50px 0;
+    background-color: #e4eef9; /* Color de fondo diferente */
 }
 
 #contacto form .form-group {
@@ -215,6 +216,27 @@ body {
 #contacto .map-container {
     height: 300px; /* Altura fija para el mapa */
     margin-top: 20px;
+}
+
+/* Botón Arriba */
+#scrollTopBtn {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* 20px desde el borde inferior */
+    right: 30px; /* 30px desde el borde derecho */
+    z-index: 99; /* Asegura que esté por encima de otros elementos */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cursor en forma de mano */
+    padding: 15px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+#scrollTopBtn:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
 }
 
 /* Footer */
