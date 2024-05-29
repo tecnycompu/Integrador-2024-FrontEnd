@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetElement = document.getElementById(targetId);
 
             if (targetId === '') {
-                // Si el targetId está vacío, desplazarse hacia arriba
+                
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Desplazarse hacia arriba cuando el usuario hace clic en el botón
     scrollTopBtn.addEventListener('click', function () {
         document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        document.documentElement.scrollTop = 0; 
     });
 
     // Manejar el envío del formulario de contacto
